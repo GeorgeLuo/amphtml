@@ -38,6 +38,11 @@
     </properties>
 
     <repositories>
+      <repository>
+        <id>aol-maven-dev-local</id>
+        <name>aol-maven-dev-local</name>
+        <url>https://artifactory.ouroath.com/artifactory/aol-maven-dev-local</url>
+      </repository>
         <repository>
             <id>maven2</id>
             <name>Maven Repository Switchboard</name>
@@ -512,7 +517,12 @@
     </build>
 
     <dependencies>
-        <dependency>
+      <dependency>
+      <groupId>amp.validator</groupId>
+      <artifactId>amphtml-validator</artifactId>
+      <version>1.0.1</version>
+      </dependency>
+      <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20190722</version>
@@ -557,7 +567,7 @@
         <dependency>
             <groupId>com.yahoo.tagchowder</groupId>
             <artifactId>tagchowder.core</artifactId>
-            <version>2.0.10</version>
+            <version>2.0.17</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
